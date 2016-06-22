@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		78BE000C1D1A7BDC00635814 /* UIView+ExtendFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 78BE00081D1A7BDC00635814 /* UIView+ExtendFrame.m */; };
+		78BE000D1D1A7BDC00635814 /* WYLInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 78BE000B1D1A7BDC00635814 /* WYLInputView.m */; };
 		78BEFFBF1D1A241B00635814 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 78BEFFBE1D1A241B00635814 /* main.m */; };
 		78BEFFC21D1A241B00635814 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 78BEFFC11D1A241B00635814 /* AppDelegate.m */; };
 		78BEFFC51D1A241B00635814 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78BEFFC41D1A241B00635814 /* ViewController.m */; };
@@ -15,8 +17,6 @@
 		78BEFFCD1D1A241B00635814 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78BEFFCB1D1A241B00635814 /* LaunchScreen.storyboard */; };
 		78BEFFD81D1A241B00635814 /* ABoutTextTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 78BEFFD71D1A241B00635814 /* ABoutTextTests.m */; };
 		78BEFFE31D1A241B00635814 /* ABoutTextUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 78BEFFE21D1A241B00635814 /* ABoutTextUITests.m */; };
-		78BEFFF81D1A260300635814 /* WYLInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 78BEFFF71D1A260300635814 /* WYLInputView.m */; };
-		78BEFFFE1D1A40B100635814 /* UIView+ExtendFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 78BEFFFD1D1A40B100635814 /* UIView+ExtendFrame.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +37,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		78BE00071D1A7BDC00635814 /* UIView+ExtendFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ExtendFrame.h"; sourceTree = "<group>"; };
+		78BE00081D1A7BDC00635814 /* UIView+ExtendFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ExtendFrame.m"; sourceTree = "<group>"; };
+		78BE000A1D1A7BDC00635814 /* WYLInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYLInputView.h; sourceTree = "<group>"; };
+		78BE000B1D1A7BDC00635814 /* WYLInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYLInputView.m; sourceTree = "<group>"; };
 		78BEFFBA1D1A241B00635814 /* ABoutText.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ABoutText.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78BEFFBE1D1A241B00635814 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		78BEFFC01D1A241B00635814 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -53,10 +57,6 @@
 		78BEFFDE1D1A241B00635814 /* ABoutTextUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ABoutTextUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		78BEFFE21D1A241B00635814 /* ABoutTextUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ABoutTextUITests.m; sourceTree = "<group>"; };
 		78BEFFE41D1A241B00635814 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		78BEFFF61D1A260300635814 /* WYLInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYLInputView.h; sourceTree = "<group>"; };
-		78BEFFF71D1A260300635814 /* WYLInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYLInputView.m; sourceTree = "<group>"; };
-		78BEFFFC1D1A40B100635814 /* UIView+ExtendFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ExtendFrame.h"; sourceTree = "<group>"; };
-		78BEFFFD1D1A40B100635814 /* UIView+ExtendFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ExtendFrame.m"; sourceTree = "<group>"; };
 		78BEFFFF1D1A43B200635814 /* CategoryTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CategoryTool.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -85,6 +85,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		78BE00061D1A7BDC00635814 /* CategoryTool */ = {
+			isa = PBXGroup;
+			children = (
+				78BE00071D1A7BDC00635814 /* UIView+ExtendFrame.h */,
+				78BE00081D1A7BDC00635814 /* UIView+ExtendFrame.m */,
+			);
+			path = CategoryTool;
+			sourceTree = "<group>";
+		};
+		78BE00091D1A7BDC00635814 /* UITool */ = {
+			isa = PBXGroup;
+			children = (
+				78BE000A1D1A7BDC00635814 /* WYLInputView.h */,
+				78BE000B1D1A7BDC00635814 /* WYLInputView.m */,
+			);
+			path = UITool;
+			sourceTree = "<group>";
+		};
 		78BEFFB11D1A241B00635814 = {
 			isa = PBXGroup;
 			children = (
@@ -108,14 +126,12 @@
 		78BEFFBC1D1A241B00635814 /* ABoutText */ = {
 			isa = PBXGroup;
 			children = (
+				78BE00061D1A7BDC00635814 /* CategoryTool */,
+				78BE00091D1A7BDC00635814 /* UITool */,
 				78BEFFC01D1A241B00635814 /* AppDelegate.h */,
 				78BEFFC11D1A241B00635814 /* AppDelegate.m */,
 				78BEFFC31D1A241B00635814 /* ViewController.h */,
 				78BEFFC41D1A241B00635814 /* ViewController.m */,
-				78BEFFF61D1A260300635814 /* WYLInputView.h */,
-				78BEFFF71D1A260300635814 /* WYLInputView.m */,
-				78BEFFFC1D1A40B100635814 /* UIView+ExtendFrame.h */,
-				78BEFFFD1D1A40B100635814 /* UIView+ExtendFrame.m */,
 				78BEFFFF1D1A43B200635814 /* CategoryTool.h */,
 				78BEFFC61D1A241B00635814 /* Main.storyboard */,
 				78BEFFC91D1A241B00635814 /* Assets.xcassets */,
@@ -292,10 +308,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				78BEFFC51D1A241B00635814 /* ViewController.m in Sources */,
-				78BEFFFE1D1A40B100635814 /* UIView+ExtendFrame.m in Sources */,
 				78BEFFC21D1A241B00635814 /* AppDelegate.m in Sources */,
+				78BE000C1D1A7BDC00635814 /* UIView+ExtendFrame.m in Sources */,
 				78BEFFBF1D1A241B00635814 /* main.m in Sources */,
-				78BEFFF81D1A260300635814 /* WYLInputView.m in Sources */,
+				78BE000D1D1A7BDC00635814 /* WYLInputView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -523,6 +539,7 @@
 				78BEFFE91D1A241B00635814 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		78BEFFEA1D1A241B00635814 /* Build configuration list for PBXNativeTarget "ABoutTextTests" */ = {
 			isa = XCConfigurationList;
@@ -531,6 +548,7 @@
 				78BEFFEC1D1A241B00635814 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		78BEFFED1D1A241B00635814 /* Build configuration list for PBXNativeTarget "ABoutTextUITests" */ = {
 			isa = XCConfigurationList;
@@ -539,6 +557,7 @@
 				78BEFFEF1D1A241B00635814 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
